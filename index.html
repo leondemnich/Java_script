@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="icon" href="./img/favicone.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="./img/image 1.svg" alt="">
+            <h1 class="title">
+                Тренировка Javascript
+            </h1>
+            <h2 class="subject">
+                1. Табы
+            </h2>
+            <div class="block">
+                <div id="tabs">
+                    <button type="button" class="tab-btn active" data-btn="1">Жираф</button>
+                    <button type="button" class="tab-btn" data-btn="2">Олень</button>
+                    <button type="button" class="tab-btn" data-btn="3">Козочка</button>
+                    <button type="button" class="tab-btn" data-btn="4">Бурундук</button>
+                </div>
+                <div id="contents">
+                    <div class="content active" data-content="1"> 
+                        <h2 class="content__title">Жираф</h2>
+                        <p class="content__text">
+                            Жира́ф — парнокопытное млекопитающее из семейства жирафовых. Является самым высоким наземным животным планеты.                
+                        </p>
+                    </div>
+                    <div class="content" data-content="2"> 
+                        <h2 class="content__title">Олень</h2>
+                        <p class="content__text">
+                            Оле́невые, или оле́ньи, или оле́ни, — семейство парнокопытных млекопитающих, содержащее 51 современный вид. Оленевые распространены в Евразии, Северной и Южной Америке, а также были завезены человеком в Австралию и Новую Зеландию. Величина оленевых варьируется между величиной зайца и лошади.                        </p>
+                    </div>
+                    <div class="content" data-content="3"> 
+                        <h2 class="content__title">Козочка</h2>
+                        <p class="content__text">
+                            Домашняя коза (лат. Capra hircus) — домашнее животное, вид парнокопытных из рода горные козлы (Capra) семейства полорогих.
+                        </p>
+                        <p class="content__text">
+                            Коза — одно из первых прирученных животных. Одомашнена на Ближнем Востоке, приблизительно 9 тыс. лет назад. Предком домашней козы был дикий безоаровый козёл (Capra hircus aegagrus), до сегодняшнего дня встречающийся от греческих островов в Эгейском море через Малую Азию, Армянское нагорье и Переднюю Азию до Средней Азии.
+                        </p>
+                    </div>
+                    <div class="content" data-content="4"> 
+                        <h2 class="content__title">Бурундук</h2>
+                        <p class="content__text">
+                            Бурундуки́ — монофилетическая группа грызунов из семейства беличьих. Согласно классификации, принимаемой Красной книгой МСОП, существует три самостоятельных рода бурундуков: Neotamias, Eutamias и Tamias.                         </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="window">
+        <div class="container">
+            <h1 class="subject">
+                2. Модальное окно
+            </h1>
+            <div class="flex-wrapper">
+                <button type="button" id="btn-open">Вызвать дождь</button>
+            </div>
+            <div id="wrapper-modal">
+                <div id="overlay">
+                    <div id="modal-window">
+                        <div>
+                            <button type="button" id="btn-close">Отозвать дождь</button>
+                        </div>
+                    <div>
+                        <h2 class="window__title">
+                            Немного о дожде
+                        </h2>
+                        <p class="window__text">
+                            До́ждь — атмосферные осадки, выпадающие из облаков в виде капель жидкости со средним диаметром от 0,5 до 6—7 мм[1].
+                        </p>
+                        <p class="window__text">
+                            Осенние дожди. Южная Эстония
+                        </p>
+                        <p class="window__text">
+                        Летний дождь в Санкт-Петербурге
+                        Жидкие осадки с меньшим диаметром капель называются моросью[2]. Капли с диаметром больше 6—7 мм разбиваются в процессе падения из облаков на меньшие капли, поэтому даже при сильнейшем ливне диаметр капель не превышает 6—7 мм. Интенсивность дождя обычно составляет от 0,25 мм/ч (моросящий дождь) до 100 мм/ч (ливень)[1]. В Европе самый сильный ливень с интенсивностью 15,5 мм/мин был зафиксирован в 1920 году в Германии[2].
+                        </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slider">
+        <div class="container">
+            <h1 class="subject">3. Слайдер</h1>
+            <div class="flex-slider">
+                <div class="slider-wrapper">
+                    <div class="slide active">
+                        <img class="slider_img" src="./img/img_1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="slider_img" src="./img/img_2.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="slider_img" src="./img/img_3.jpg" alt="">
+                    </div>
+                    <button type="button" id="btn-prev"><img src="./img/Vector 1.svg" alt=""></button>
+                    <button type="button" id="btn-next"><img src="./img/Vector 2.svg" alt=""></button>
+                    <div class="dots-wrapper">
+                        <button type="button" class="dot active"></button>
+                        <button type="button" class="dot"></button>
+                        <button type="button" class="dot"></button>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+<script src="./js/main.js"></script>
+</body>
+</html>
